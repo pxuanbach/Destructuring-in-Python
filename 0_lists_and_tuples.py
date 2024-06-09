@@ -1,11 +1,11 @@
 #region Standard concept
-# list
+print("##### Standard concept - List #####")
 first, second, third = [3, 6, 8]  
 print(first)    # 3
 print(second)   # 6
 print(third)    # 8
 
-# tuple
+print("##### Standard concept - Tuple #####")
 one, two, three = (1, 2, 3) 
 print(one)      # 1
 print(two)      # 2
@@ -13,6 +13,7 @@ print(three)    # 3
 #endregion
 
 #region Standard concept exception
+print("##### Standard concept exception #####")
 try:
     first, second, third, four = [3, 6, 8]  
 except ValueError as e:
@@ -20,11 +21,13 @@ except ValueError as e:
 #endregion
 
 #region Ignoring values
+print("##### Ignoring values #####")
 one, _, three, _, _ = (1, 2, 3, 4, 5)
 print(one, three)   # 1 3
 #endregion
 
 #region Using * operator to assign the remaining values
+print("##### Using * operator to assign the remaining values #####")
 a, b, *re = ["a", "b", "c", "d", "e"]
 print(a)    # a
 print(b)    # b
@@ -36,6 +39,7 @@ print(end)      # crab
 #endregion
 
 #region Ignoring remaining values
+print("##### Ignoring remaining values #####")
 a, *_ = ["a", "b", "c", "d", "e"]
 print(a)    # a
 
